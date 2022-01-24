@@ -3,19 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог</title>
   </head>
   <body>
     <header class="page-header">
       <div class="logo-list">
-        <a
-          ><img
-            class="logo"
-            src="index.html"
-            title="логотип проекта седона"
-            alt="логотип проекта седона"
-        /></a>
+        <a><img class="logo" src="index.html" title="проекта седона" alt="проекта седона"/></a>
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -51,7 +44,9 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <!-- вот тут я не понимаю как мне поставить домик > и надпись раздела Гостиницы -->
+        <a href="#"><img src="" alt="на главную" title="вернуться на главную"></a>
+        <span>Гостиницы</span>
+        <!-- правильно ли поставил хлебные крошки? -->
       </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
@@ -131,7 +126,8 @@
         </form>
       </section>
       <section class="center">
-        <h2>Найдено гостиниц: 38</h2>
+        <h2 class="visually-hidden">Каталог гостиниц</h2>
+        <p>Найдено гостиниц: 38</p>
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select aria-label="Сортировка">
@@ -139,34 +135,32 @@
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <div>
-            <p>
+          <ul>
+            <li>
               <a href="#" class="button button-light">
                 <span class="visually-hidden">Показать список крупно</span>
               </a>
-            </p>
-            <p>
+            </li>
+            <li>
               <a class="button" href="#">
-                <span class="visually-hidden"
-                  >Показать крупно одной карточкой</span
-                >
+                <span class="visually-hidden">Показать крупно одной карточкой</span>
               </a>
-            </p>
-            <p>
+            </li>
+            <li>
               <a class="button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
-            </p>
+            </li>
             <button class="visually-hidden" type="submit">
               Отсортировать продукты
             </button>
-          </div>
+          </ul>
         </form>
-        <section class="hotels-catalog-list">
+        <div class="hotels-catalog-list">
           <ul class="catalog-list">
             <li class="catalog-list-item">
               <img src="" alt="" />
-              <h3>Amara Resort & Spa</h3>
+              <h3><a href="#"> Amara Resort & Spa</a></h3>
               <dl>
                 <dt>Гостиница</dt>
                 <dd>От 4000 ₽</dd>
@@ -178,7 +172,7 @@
             </li>
             <li class="catalog-list-item">
               <img src="" alt="" />
-              <h3>Desert Quail Inn</h3>
+              <h3><a href="#">Desert Quail Inn</a></h3>
               <dl>
                 <dt>Гостиница</dt>
                 <dd>От 3000 ₽</dd>
@@ -190,7 +184,7 @@
             </li>
             <li class="catalog-list-item">
               <img src="" alt="" />
-              <h3>Villas at Poco Diablo</h3>
+              <h3><a href="#">Villas at Poco Diablo</a></h3>
               <dl>
                 <dt>Гостиница</dt>
                 <dd>От 2000 ₽</dd>
@@ -202,7 +196,7 @@
             </li>
             <li class="catalog-list-item">
               <img src="" alt="" />
-              <h3>GreenTree Inn</h3>
+              <h3><a href="#">GreenTree Inn</a></h3>
               <dl>
                 <dt>Гостиница</dt>
                 <dd>От 3000 ₽</dd>
@@ -213,13 +207,11 @@
               </dl>
             </li>
           </ul>
-        </section>
-      </section>
-      <hr />
+        </div>
+      </section>  
       <div>
         <button class="catalog-item-button" type="button">Загрузить ещё</button>
       </div>
-      <hr />
       <section>
         <ul class="pagination">
           <li class="pagination-item">
@@ -241,40 +233,31 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <select>
-          <option value="two">2</option>
-          <option value="four">4</option>
-          <option value="six">6</option>
-        </select>
-        <h2 class="footer-title">Подпишитесь на рассылку</h2>
-        <p class="footer-post">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form
-          class="newsletter-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <label for="newsletter-email">Email</label>
-          <input
-            class="field"
-            placeholder="Ваш email"
-            type="email"
-            name="newsletter-email"
-            id="newsletter-email"
-            required
-          />
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
-          </button>
-        </form>
+        <div>
+            <p>Гостиниц на странице:</p>
+              <select>
+                <option value="two">2</option>
+                <option value="four">4</option>
+                <option value="six">6</option>
+              </select>
+        </div>
+          <div class="subscription">
+            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+              <p class="subscription-post">
+                Только полезная информация и никакого спама, честное бойскаутское!
+              </p>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <input type="text" name="e-mail" value="Ваш e-mail">
+                  <input type="submit" value="Подписаться">
+              </form>
+          </div>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
+      <div class="footer-social">
         <h3 class="visually-hidden">Социальные сети</h3>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
+        <ul class="social-list">
+          <li class="social-item">
             <a
               class="buttom"
               href="https://twitter.com/htmlacademy_ru"
@@ -283,7 +266,7 @@
               <span class="visually-hidden">Твитер</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="social-item">
             <a
               class="buttom"
               href="https://www.facebook.com/htmlacademy"
@@ -292,7 +275,7 @@
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="social-item">
             <a
               class="buttom"
               href="https://www.youtube.com/c/HTMLAcademyRUS"
@@ -302,15 +285,15 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="telephone">
+      </div>
+      <div class="telephone">
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </section>
-      <section class="logo_footer">
+      </div>
+      <div class="logo_footer">
         <a href="#">
           <img src="" alt="логотип" />
         </a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
