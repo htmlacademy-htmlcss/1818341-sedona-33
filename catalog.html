@@ -42,7 +42,7 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
+      <section class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul>
           <li><a href="#"></li>
@@ -50,7 +50,7 @@
         </ul>
         <span>Гостиницы</span>
         <!-- правильно ли поставил хлебные крошки? -->
-      </header>
+      </section>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="" method="get">
@@ -94,7 +94,7 @@
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="apartments">
+                  <input class="control-input" type="radio" name="apartments" />
                   Апартаменты
                 </label>
               </li>
@@ -109,11 +109,14 @@
               ><input type="" name="" id="" placeholder="до 9000"
             /></label>
           </fieldset>
-          <input type="submit" value="Применить">
-          <input type="reset" value="Сбросить">
+          <div>
+            <button type="submit" value="Применить">Применить</button>
+            <button type="reset" value="Сбросить">Сбросить</button>
+          </div>
         </form>
       </section>
-      <section class="center">
+      <section class="max-center">
+      <div class="center">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <p>Найдено гостиниц: 38</p>
         <form class="sorting-type">
@@ -139,11 +142,12 @@
                 <span class="visually-hidden">Показать список</span>
               </a>
             </li>
-            <button class="visually-hidden" type="submit">
-              Отсортировать продукты
-            </button>
           </ul>
+          <button class="visually-hidden" type="submit">
+            Отсортировать продукты
+          </button>
         </form>
+      </div>
         <div class="hotels-catalog-list">
           <ul class="catalog-list">
             <li class="catalog-list-item">
@@ -152,11 +156,11 @@
               <dl>
                 <dt>Гостиница</dt>
                 <dd>От 4000 ₽</dd>
+              </dl> 
                 <a href="#">подробнее</a>
                 <button>В избранное</button>
-                <dt>Количество звезд 4</dt>
-                <dd>Рейтинг:8.5</dd>
-              </dl>
+                <span>Количество звезд 4</span>>
+                <span>Рейтинг:8.5</span>
             </li>
             <li class="catalog-list-item">
               <img src="" alt="" />
@@ -164,11 +168,11 @@
               <dl>
                 <dt>Гостиница</dt>
                 <dd>От 3000 ₽</dd>
+              </dl>
                 <a href="#">подробнее</a>
                 <button>В избранное</button>
-                <dt>Количество звезд 3</dt>
-                <dd>Рейтинг:8.9</dd>
-              </dl>
+                <span>Количество звезд 3</span>
+                <span>Рейтинг:8.9</span>
             </li>
             <li class="catalog-list-item">
               <img src="" alt="" />
@@ -176,11 +180,11 @@
               <dl>
                 <dt>Гостиница</dt>
                 <dd>От 2000 ₽</dd>
+              </dl>
                 <a href="#">подробнее</a>
                 <button>В избранное</button>
-                <dt>Количество звезд 2</dt>
-                <dd>Рейтинг:9.2</dd>
-              </dl>
+                <span>Количество звезд 2</span>
+                <span>Рейтинг:9.2</span>
             </li>
             <li class="catalog-list-item">
               <img src="" alt="" />
@@ -188,19 +192,18 @@
               <dl>
                 <dt>Гостиница</dt>
                 <dd>От 3000 ₽</dd>
+              </dl>
                 <a href="#">подробнее</a>
                 <button>В избранное</button>
-                <dt>Количество звезд 2</dt>
-                <dd>Рейтинг:9.2</dd>
-              </dl>
+                <span>Количество звезд 2</span>
+                <span>Рейтинг:9.2</span>
             </li>
           </ul>
-        </div>
-      </section>  
+        </div> 
       <div>
         <button class="catalog-item-button" type="button">Загрузить ещё</button>
       </div>
-      <section>
+      <div>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link" href="#">1</a>
@@ -220,15 +223,18 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-        </ul>
-        <div>
+         </ul>
+          <div>
             <p>Гостиниц на странице:</p>
               <select>
                 <option value="two">2</option>
                 <option value="four">4</option>
                 <option value="six">6</option>
               </select>
-        </div>
+          </div>
+      </div>
+      </section>
+        <section>
           <div class="subscription">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
               <p class="subscription-post">
@@ -239,7 +245,7 @@
                   <input type="submit" value="Подписаться">
               </form>
           </div>
-      </section>
+        </section>
     </main>
     <footer class="page-footer">
       <div class="footer-social">
