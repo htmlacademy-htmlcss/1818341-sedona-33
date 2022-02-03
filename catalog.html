@@ -9,8 +9,10 @@
   </head>
   <body>
     <header class="page-header">
+<!-- как вставить заливное изображение и куда? -->
       <div class="logo-list">
-        <a><img class="logo" src="index.html" title="проекта седона" alt="проекта седона"/></a>
+        <!-- а как лого на каталоге написать чтобы при на нажатии на него на главную?правильно ли тут? -->
+        <a href="index.html"><img class="logo" src="images/logo.svg" title="проекта седона" alt="проекта седона"/></a>
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -32,7 +34,8 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Лайк-Подписка</span>
+              <!-- а вот как тут сделать поставить правильно сердечко? правильно ли будет его опять через css? -->
+              <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -47,8 +50,15 @@
       <section class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul>
-          <li><a href="#"></a></li>
-          <li><img src="" alt="на главную" title="вернуться на главную"></a>
+          <li><a href="#">
+              <img class="homsmall" src="images/homsmall.svg" alt="на главную" width="12" height="12" title="вернуться на главную">
+              </a>
+          </li>
+          <li>
+            <!-- как поставить > ? или это через символику -->
+              <img class="nav-link" src="images/nav-link.svg" alt="указатель" width="5" height="8">
+          </li>
+          <li>
             <span>Гостиницы</span>
           </li>
         </ul>
@@ -104,12 +114,12 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label for="" class=""
-              ><input type="" name="" id="" placeholder="от 0"
-            /></label>
-            <label for="" class=""
-              ><input type="" name="" id="" placeholder="до 9000"
-            /></label>
+            <label for="" class="">
+              <input type="" name="" id="" placeholder="от 0"/>
+          </label>
+            <label for="" class="">
+              <input type="" name="" id="" placeholder="до 9000"/>
+            </label>
           </fieldset>
           <div>
             <button type="submit" value="Применить">Применить</button>
@@ -153,7 +163,7 @@
         <div class="hotels-catalog-list">
           <ul class="catalog-list">
             <li class="catalog-list-item">
-              <img src="" alt="" />
+              <img src="images/amara-resort.jpg" alt="амара отель" width="300" height="220">
               <h3><a href="#"> Amara Resort & Spa</a></h3>
               <dl>
                 <dt>Гостиница</dt>
@@ -164,12 +174,12 @@
                 <button type="button">В избранное</button>
               </div>
               <div>
-                <span>Количество звезд 4</span>>
+                <span>Количество звезд 4</span>
                 <span>Рейтинг:8.5</span>
               </div>
             </li>
             <li class="catalog-list-item">
-              <img src="" alt="" />
+              <img src="images/desert quail.jpg" alt="дезерт куэйл" width="310" height="220">
               <h3><a href="#">Desert Quail Inn</a></h3>
               <dl>
                 <dt>Гостиница</dt>
@@ -185,7 +195,7 @@
               </div>
             </li>
             <li class="catalog-list-item">
-              <img src="" alt="" />
+              <img src="images/villas-poco.jpg" alt="вилла поко" width="308" height="220">
               <h3><a href="#">Villas at Poco Diablo</a></h3>
               <dl>
                 <dt>Гостиница</dt>
@@ -201,7 +211,7 @@
               </div>
             </li>
             <li class="catalog-list-item">
-              <img src="" alt="" />
+              <img src="images/greentree.jpg" alt="зеленая территория" width="300" height="220">
               <h3><a href="#">GreenTree Inn</a></h3>
               <dl>
                 <dt>Гостиница</dt>
@@ -276,6 +286,7 @@
               title="Наш Твитер"
             >
               <span class="visually-hidden">Твитер</span>
+              <img src="images/social-twitter.svg" alt="" width="18" height="15">
             </a>
           </li>
           <li class="social-item">
@@ -285,6 +296,7 @@
               title="Наш Фейсбук"
             >
               <span class="visually-hidden">Фейсбук</span>
+              <img src="images/social-facebook.svg" alt="" width="10" height="18">
             </a>
           </li>
           <li class="social-item">
@@ -294,6 +306,7 @@
               title="Наш Ютуб"
             >
               <span class="visually-hidden">Ютуб</span>
+              <img src="images/social-youtube.svg" alt="" width="20" height="16">
             </a>
           </li>
         </ul>
@@ -303,7 +316,7 @@
       </div>
       <div class="logo_footer">
         <a href="#">
-          <img src="" alt="логотип" />
+          <img src="images/logo_htmlacademy.svg" width="116" height="34" alt="логотип">
         </a>
       </div>
     </footer>

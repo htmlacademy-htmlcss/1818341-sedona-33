@@ -18,6 +18,13 @@
 
 
 
+.homsmall{
+    background: #000;
+}
+.nav-link{
+    background: #000;
+}
+
 
 .advantages-item .house{
     background-image: url(../images/house.svg);
