@@ -2,20 +2,38 @@
     background-image: url(../images/favorite.svg);
     background-repeat: no-repeat;
 }
-li .house{
+.big-slogans{
+    background-image: url(../images/welcome.svg);
+    background-repeat: no-repeat;
+}
+.vector-heder{
+    background-image: url(../images/vector-heder.svg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 57px;
+    background: yellowgreen;
+}
+
+
+
+
+
+
+.advantages-item .house{
     background-image: url(../images/house.svg);
     background-repeat: no-repeat;
 }
-li .burger{
+.advantages-item .burger{
     background-image: url(../images/burger.svg);
     background-repeat:no-repeat;
 }
-li .souvenir{
+.advantages-item .souvenir{
     background-image: url(../images/souvenir.svg);
     background-repeat: no-repeat;
 }
 .mailing-list{
-    background-image: url(../images/canyon.jpg);
+    background: #000;
+    background-image: url();
     background-repeat: no-repeat;
     width: 1200px;
     height: 412px;
