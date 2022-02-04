@@ -22,29 +22,6 @@ body{
     color: #242424;
     background-color: #fbf7f4;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.favorites{
-    background-image: url(../images/favorite.svg);
-    background-repeat: no-repeat;
-}
-.big-slogans{
-    background-image: url(../images/welcome.svg);
-    background-repeat: no-repeat;
-}
 .vector-heder{
     background-image: url(../images/vector-heder.svg);
     background-repeat: no-repeat;
@@ -52,19 +29,6 @@ body{
     height: 57px;
     background: yellowgreen;
 }
-
-
-
-
-
-.homsmall{
-    background: #000;
-}
-.nav-link{
-    background: #000;
-}
-
-
 .advantages-item .house{
     background-image: url(../images/house.svg);
     background-repeat: no-repeat;
@@ -78,9 +42,14 @@ body{
     background-repeat: no-repeat;
 }
 .mailing-list{
-    background: #000;
-    background-image: url();
+    background-image: url(../images/canyon.jpg);
     background-repeat: no-repeat;
     width: 1200px;
     height: 412px;
+}
+.big-inner-header{
+    background-image: url(../images/catalog-background-header.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 408px;
 }

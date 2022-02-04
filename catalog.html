@@ -11,7 +11,6 @@
     <header class="page-header">
 <!-- как вставить заливное изображение и куда? -->
       <div class="logo-list">
-        <!-- а как лого на каталоге написать чтобы при на нажатии на него на главную?правильно ли тут? -->
         <a href="index.html"><img class="logo" src="images/logo.svg" title="проекта седона" alt="проекта седона"/></a>
       </div>
       <nav class="navigation">
@@ -47,86 +46,85 @@
       </nav>
     </header>
     <main class="main-inner">
-      <section class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul>
-          <li><a href="#">
-              <img class="homsmall" src="images/homsmall.svg" alt="на главную" width="12" height="12" title="вернуться на главную">
-              </a>
-          </li>
-          <li>
-            <!-- как поставить > ? или это через символику -->
-              <img class="nav-link" src="images/nav-link.svg" alt="указатель" width="5" height="8">
-          </li>
-          <li>
-            <span>Гостиницы</span>
-          </li>
-        </ul>
-      </section>
-      <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <form class="catalog-filter" action="" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                  Бассейн
-                </label>
+      <div class="big-inner-header">
+          <section class="inner-header">
+            <h1 class="inner-header-title">Гостиницы Седоны</h1>
+            <ul>
+              <li><a href="#">
+                  <img class="homsmall" src="images/homsmall.svg" alt="на главную" width="12" height="12" title="вернуться на главную">
+                  </a>
               </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi">
-                  Wi-Fi
-                </label>
+                  <!-- тут между домом и главной вставляется галка через css -->
+              <li>
+                <span>Гостиницы</span>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="hotel" checked>
-                  Гостиница
+          </section>
+          <section class="catalog-products">
+            <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+            <form class="catalog-filter" action="" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="parking" checked>
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wi-fi">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="hotel" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="motel">
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="apartments" />
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <label for="" class="">
+                  <input type="" name="" id="" placeholder="от 0"/>
+              </label>
+                <label for="" class="">
+                  <input type="" name="" id="" placeholder="до 9000"/>
                 </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="motel">
-                  Мотель
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="apartments" />
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label for="" class="">
-              <input type="" name="" id="" placeholder="от 0"/>
-          </label>
-            <label for="" class="">
-              <input type="" name="" id="" placeholder="до 9000"/>
-            </label>
-          </fieldset>
-          <div>
-            <button type="submit" value="Применить">Применить</button>
-            <button type="reset" value="Сбросить">Сбросить</button>
-          </div>
-        </form>
-      </section>
+              </fieldset>
+              <div>
+                <button type="submit" value="Применить">Применить</button>
+                <button type="reset" value="Сбросить">Сбросить</button>
+              </div>
+            </form>
+          </section>
+        </div>
       <section class="max-center">
       <div class="center">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
@@ -187,7 +185,7 @@
               </dl>
               <div>
                 <a href="#">подробнее</a>
-                <button type="submit">В избранное</button>
+                <button type="button">В избранное</button>
               </div>
               <div>
                 <span>Количество звезд 3</span>
@@ -203,7 +201,7 @@
               </dl>
               <div>
                 <a href="#">подробнее</a>
-                <button type="submit">В избранное</button>
+                <button type="button">В избранное</button>
               </div>
               <div>
                 <span>Количество звезд 2</span>
@@ -219,7 +217,7 @@
               </dl>
               <div>
                 <a href="#">подробнее</a>
-                <button type="submit">В избранное</button>
+                <button type="button">В избранное</button>
               </div>
               <div>
                 <span>Количество звезд 2</span>
@@ -262,18 +260,15 @@
           </div>
       </div>
       </section>
-        <section>
-          <div class="subscription">
-            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-              <p class="subscription-post">
-                Только полезная информация и никакого спама, честное бойскаутское!
-              </p>
-              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <input type="text" name="e-mail" value="Ваш e-mail">
-                  <input type="submit" value="Подписаться">
-              </form>
-          </div>
-        </section>
+      <section class="mailing-list">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама,
+          честное бойскаутское!</p>
+          <form action="">
+          <input type="email" name="email" placeholder="Ваш e-mail">
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="footer-social">
