@@ -15,19 +15,61 @@
 }
 
 body{
-    font-family: "PT Sans";
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: #242424;
-    background-color: #fbf7f4;
+    color: #333333;
+    background-color: #ffffff;
 }
-.vector-heder{
-    background-image: url(../images/vector-heder.svg);
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 57px;
-    background: yellowgreen;
+h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.page-header{
+    color: #ffffff;
+    background-color: #000000;
+}
+.navigation-link{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform:capitalize;
+}
+.advantages h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 740px;
+    margin: 0 auto;
+}
+.advantages .subtitle{
+    font-style: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
+h3{
+    font-style: normal;
+    font-weight:700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.advantages-item{
+    font-style: normal;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 21px;
 }
 .advantages-item .house{
     background-image: url(../images/house.svg);
@@ -41,15 +83,114 @@ body{
     background-image: url(../images/souvenir.svg);
     background-repeat: no-repeat;
 }
-.mailing-list{
-    background-image: url(../images/canyon.jpg);
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 412px;
-}
+
 .big-inner-header{
     background-image: url(../images/catalog-background-header.jpg);
     background-repeat: no-repeat;
     width: 1200px;
     height: 408px;
 }
+
+.hotel-search p{
+    font-style: normal;
+    font-weight:400;
+    font-size: 22px;
+    line-height: 26px;
+}
+.hotel-search a{
+    font-style: normal;
+    font-weight:700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.mailing-list{
+    background-image: url(../images/canyon.jpg);
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    height: 412px;
+}
+.mailing-list p{
+    font-style: normal;
+    font-weight:400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+form .button{
+    font-style: normal;
+    font-weight:700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.telephone a{
+    font-style: normal;
+    font-weight:400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/* тут все с каталога*/
+.inner-header-title{
+    font-style: normal;
+    font-weight:700;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.catalog-filter-title{
+    font-style: normal;
+    font-weight:700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.catalog-filter-item{
+    font-style: normal;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.center p{
+    font-style: normal;
+    font-weight:700;
+    font-size: 30px;
+    line-height: 39px;
+}
+.sort-type{
+    font-style: normal;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.hotels-catalog-list h3{
+    font-style: normal;
+    font-weight:700;
+    font-size: 24px;
+    line-height: 31px;
+}
+.hotels-catalog-list dt и dd {
+    ?в dl надо сначала класс? 
+}
+
+
+
+
+
+
+
+
+
+
+
+
