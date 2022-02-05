@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PT Sans";
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "PT Sans";
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -21,7 +21,7 @@ body{
     color: #333333;
     background-color: #ffffff;
 }
-h2{
+body .h2{
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -31,7 +31,6 @@ h2{
 }
 .page-header{
     color: #ffffff;
-    background-color: #000000;
 }
 .navigation-link{
     font-size: 20px;
@@ -39,8 +38,28 @@ h2{
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    color: #ffffff;
-    text-transform:capitalize;
+    color: #000000;
+}
+/*кнопка хочу сюда */
+.navigation-link-want-here{
+    max-width: 160px;
+    height: 38px;
+    background: #756257;
+    border-radius: 4px;
+    padding: 9px 15px;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.welcome-slogans{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    height: 485px;
 }
 .advantages h2{
     font-style: normal;
@@ -58,19 +77,28 @@ h2{
     line-height: 36px;
     text-align: center;
 }
-h3{
-    font-style: normal;
-    font-weight:700;
-    font-size: 24px;
-    line-height: 28px;
-}
-
 .advantages-item{
     font-style: normal;
     font-weight:400;
     font-size: 18px;
     line-height: 21px;
 }
+.advantages-item-header{
+    /*вот не понятно как организовать пространство, чтоб квадрат был и его залить */
+}
+.advantages-item-title{
+    background: #83B3D3;
+    max-width: 400px;
+    height: 384px;
+}
+.advantages-item-title >h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 .advantages-item .house{
     background-image: url(../images/house.svg);
     background-repeat: no-repeat;
@@ -84,12 +112,7 @@ h3{
     background-repeat: no-repeat;
 }
 
-.big-inner-header{
-    background-image: url(../images/catalog-background-header.jpg);
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 408px;
-}
+
 
 .hotel-search p{
     font-style: normal;
@@ -97,24 +120,43 @@ h3{
     font-size: 22px;
     line-height: 26px;
 }
-.hotel-search a{
+.hotel-search-a{
+    max-width: 575px;
+    height: 60px;
+    padding: 15px 150px;
+    border-radius: 10px;
+    background: #756257;
     font-style: normal;
     font-weight:700;
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
+    text-decoration: none;
+    color:#ffffff ;
 }
-.mailing-list{
+.mailing-list h2{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.mailing-list-background{
     background-image: url(../images/canyon.jpg);
     background-repeat: no-repeat;
-    max-width: 1200px;
-    height: 412px;
 }
 .mailing-list p{
-    font-style: normal;
-    font-weight:400;
     font-size: 22px;
     line-height: 26px;
+    color: #ffffff;
+}
+/*жесть просто а не форма*/
+.email-type{
+    max-width: 600px;
+    height: 60px;
+    border-radius: 10px 0px 0px 10px;
+    background: #F2F2F2;
+    border: none;
 }
 
 form .button{
@@ -123,6 +165,12 @@ form .button{
     font-size: 20px;
     line-height: 26px;
     text-transform: uppercase;
+    color:#ffffff;
+    background: #83B3D3;
+    max-width: 200px;
+    height: 60px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
 }
 .telephone a{
     font-style: normal;
@@ -130,20 +178,25 @@ form .button{
     font-size: 40px;
     line-height: 40px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
 }
 
 
 
 
-
+.big-inner-header{
+    background-image: url(../images/catalog-background-header.jpg);
+    background-repeat: no-repeat;
+}
 
 
 /* тут все с каталога*/
 .inner-header-title{
-    font-style: normal;
     font-weight:700;
     font-size: 60px;
-    line-height: 70px;
+    line-height: 78px;
+    color:#ffffff;
 }
 
 .catalog-filter-title{
@@ -151,6 +204,7 @@ form .button{
     font-weight:700;
     font-size: 20px;
     line-height: 26px;
+    color:#ffffff;
 }
 
 .catalog-filter-item{
@@ -159,12 +213,18 @@ form .button{
     font-size: 18px;
     line-height: 23px;
 }
+/*но вот проблема, списки белые и на фоне их не видно, а как же тогда норм вставить?*/
+.catalog-filter-item{
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
 
 .center p{
-    font-style: normal;
     font-weight:700;
     font-size: 30px;
     line-height: 39px;
+    text-transform: uppercase;
 }
 .sort-type{
     font-style: normal;
@@ -173,24 +233,103 @@ form .button{
     line-height: 23px;
 }
 
-.hotels-catalog-list h3{
+.catalog-list-item-min{
     font-style: normal;
     font-weight:700;
     font-size: 24px;
     line-height: 31px;
+    color: #000000;
+    text-decoration: none;
 }
-.hotels-catalog-list dt и dd {
-    ?в dl надо сначала класс? 
+
+.location-details{
+    color: #333333;
+    font-size: 18px;
+    line-height: 23px;
+}
+.more{
+    background: #756257;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 17px;
+    border-radius: 4px;
+    width: 134px;
+    height: 38px;
+}
+.favorites{
+    background: #83B3D3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: none;
+    width: 142px;
+    height: 38px;
+}
+.catalog-list-item-rating{
+    background: #F2F2F2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    padding: 10px 33px;
+    border-radius: 4px;
+    border: none;
+    width: 160px;
+    height: 38px;
+}
+.catalog-item-button{
+    width: 620px;
+    height: 60px;
+    background: #83B3D3;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+/* вот тут не могу понять к чему стиль надо применить? как понял к ли, но чтот  список */
+.pagination-item{
+    width: 55px;
+    height: 55px;
+    background: #83B3D3;
+    text-align: center;
+}
+.pagination-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;   
+}
+.number-hotels{
+    font-size: 18px;
+    line-height: 23px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.mailing-list-catalog{
+    color: #333333;
+    font-size: 22px;
+    line-height: 26px;
+}
+.mailing-list-catalog h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
