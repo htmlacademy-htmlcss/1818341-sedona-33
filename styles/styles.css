@@ -189,6 +189,27 @@ form .button{
     background-image: url(../images/catalog-background-header.jpg);
     background-repeat: no-repeat;
 }
+.apply{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    background: #83B3D3;
+    border-radius: 4px;
+    width: 160px;
+    height: 48px;
+    border: none;
+    text-transform: uppercase;
+}
+/* специально окрасил в серый чтобы не потерять, потом поправю*/
+.reset{
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background:#e2e2e7;
+    border: none;
+}
+
 
 
 /* тут все с каталога*/
