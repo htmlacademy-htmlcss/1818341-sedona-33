@@ -32,7 +32,6 @@ body{
     text-decoration: none;
     color: #000000;
 }
-/*кнопка хочу сюда */
 .navigation-link-want-here{
     max-width: 160px;
     height: 38px;
@@ -48,124 +47,83 @@ body{
     text-transform: uppercase;
 }
 .welcome-slogans{
+    background: #e5e5e5;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     max-width: 1200px;
     height: 485px;
 }
-.advantages h2{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    max-width: 740px;
-    margin: 0 auto;
-}
-.advantages .subtitle{
-    font-style: normal;
-    font-size: 22px;
-    line-height: 36px;
-    text-align: center;
-}
-.advantages-item{
-    font-style: normal;
-    font-weight:400;
-    font-size: 18px;
-    line-height: 21px;
-}
-.advantages-item-light-blue{
-    background: #83B3D3;
-    
-}
-/*это первый и второй заголовок перечислений li тк они на голубом фоне с белым шрифтом*/
-.advantages-title-white{
+.advantages-item-title{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
 }
 .advantages-item-number{
-    color:#ffffff;
     font-size: 18px;
     line-height: 21px;
-}
-.advantages-item-number-grey{
-    font-size: 18px;
-    line-height: 21px;
+    text-transform: uppercase;
     color: #333333;
 }
 .advantages-item-text{
-    color:#ffffff;
-    font-size: 18px;
-    line-height: 21px;
-}
-/*конец ячейки с пояснением*/
-
-/* 3 и 5 ячейка*/
-.advantages-item-light-white{
-    background: #F0F6FA;
-}
-.advantages-item-transparent-blue{
-    background: #E6F0F6;
-}
-.advantages-title-black{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #000000;
-}
-.advantages-item-text-gray{
     font-size: 18px;
     line-height: 21px;
     color: #333333;
 }
-/*заголовки всех ништяков что тут крутое в седоне*/
-.advantages-title{
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
-}
-.advantages-description{
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
-}
-
-
-.advantages-item-title{
-    background: #83B3D3;
-    max-width: 400px;
-    height: 384px;
-}
-.advantages-item-title >h3{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
 .advantages-item-house{
+    background: rgba(131, 179, 211, 0.12);
     background-image: url(../images/house.svg);
     background-repeat: no-repeat;
 }
-.advantages-item-burger{ 
+.advantages-item-burger{
+    background: #FFFFFF;
     background-image: url(../images/burger.svg);
-    background-repeat:no-repeat;
-
+    background-repeat: no-repeat;
 }
 .advantages-item-souvenir{
+    background: rgba(131, 179, 211, 0.12);
     background-image: url(../images/souvenir.svg);
     background-repeat: no-repeat;
 }
+/*тут первый и второй квадрат они синие и заливка шрифта белая*/
+.advantages-item-block{
+    background: #83B3D3;
+    color: #ffffff;
+}
 
 
+
+
+
+.mailing-list{
+    background-color: #FFFFFF;
+}
+.mailing-list h2 {
+    color:#000000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.mailing-list p {
+    font-size: 22px;
+    line-height: 26px;
+    color:#000000;
+}
+.mailing-list-background {
+    background-image: url(../images/canyon.jpg);
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+
+.mailing-list-background h2 {
+    color: #FFFFFF;
+}
+
+.mailing-list-background p {
+    color: #FFFFFF;
+}
 .hotel-search-h2{
     color: #000000;
     font-weight: 700;
@@ -223,11 +181,8 @@ body{
     text-decoration: none;
     color: #000000;
 }
-
-
-
-
 .big-inner-header{
+    background: #e5e5e5;
     background-image: url(../images/catalog-background-header.jpg);
     background-repeat: no-repeat;
 }
@@ -374,38 +329,6 @@ body{
 .number-hotels{
     font-size: 18px;
     line-height: 23px;
-}
-
-.mailing-list h2{
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-.mailing-list p{
-    font-size: 22px;
-    line-height: 26px;
-    color: #ffffff;
-}
-.mailing-list-background{
-    background-image: url(../images/canyon.jpg);
-    background-repeat: no-repeat;
-
-}
-.mailing-list-catalog{
-    background: #FFFFFF;
-}
-.mailing-list-catalog h2{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    color:#000000;
-}
-.mailing-list-catalog p{
-    font-size: 22px;
-    line-height: 26px;
-    color:#000000;
 }
 .pagination-item{
     width: 55px;
