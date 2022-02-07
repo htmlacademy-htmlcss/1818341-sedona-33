@@ -152,18 +152,15 @@ body{
 }
 
 .advantages-item-house{
-    background: #F0F6FA;
     background-image: url(../images/house.svg);
     background-repeat: no-repeat;
 }
-.advantages-item-burger{
-    background: #FFFFFF;
+.advantages-item-burger{ 
     background-image: url(../images/burger.svg);
     background-repeat:no-repeat;
 
 }
 .advantages-item-souvenir{
-    background: #F0F6FA;
     background-image: url(../images/souvenir.svg);
     background-repeat: no-repeat;
 }
