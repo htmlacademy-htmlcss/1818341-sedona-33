@@ -75,24 +75,29 @@ body{
     font-size: 18px;
     line-height: 21px;
 }
-.advantages-item-header{
+.advantages-item-light-blue{
     background: #83B3D3;
     
 }
 /*это первый и второй заголовок перечислений li тк они на голубом фоне с белым шрифтом*/
-.third-order-heading-white{
+.advantages-title-white{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
     color: #ffffff;
 }
-.numbering{
+.advantages-item-number{
     color:#ffffff;
     font-size: 18px;
     line-height: 21px;
 }
-.header-comment{
+.advantages-item-number-grey{
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.advantages-item-text{
     color:#ffffff;
     font-size: 18px;
     line-height: 21px;
@@ -100,25 +105,20 @@ body{
 /*конец ячейки с пояснением*/
 
 /* 3 и 5 ячейка*/
-.advantages-item-footer{
+.advantages-item-light-white{
     background: #F0F6FA;
 }
-.advantages-item-center-footer{
+.advantages-item-transparent-blue{
     background: #E6F0F6;
 }
-.third-order-heading-black{
+.advantages-title-black{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
 }
-.numbering-center{
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
-}
-.center-comment{
+.advantages-item-text-gray{
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -196,20 +196,6 @@ body{
     text-decoration: none;
     color:#ffffff ;
 }
-.mailing-list h2{
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-
-.mailing-list p{
-    font-size: 22px;
-    line-height: 26px;
-    color: #ffffff;
-}
-/*жесть просто а не форма*/
 .email-type{
     max-width: 600px;
     height: 60px;
@@ -387,51 +373,57 @@ body{
     line-height: 26px;
     text-transform: uppercase;
 }
-/* вот тут не могу понять к чему стиль надо применить? как понял к ли, но чтот  список */
-.pagination-item{
-    width: 55px;
-    height: 55px;
-    background: #83B3D3;
-}
-.pagination-link{
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    background: #83B3D3;   
-    text-transform: uppercase;
-}
-/* вот странность, мне кажется тут много всего*/
-.pagination-item-one{
- background: #F2F2F2;
- color: #000000;
- font-weight: 700;
- font-size: 20px;
-line-height: 26px;
-}
+
 .number-hotels{
     font-size: 18px;
     line-height: 23px;
 }
 
-.mailing-list {
-    color: #000000;
-}
-.mailing-list-background{
+.mailing-list{
+    /*цвет из головы, тк в фигме белый*/
+    background-color:gray;
     background-image: url(../images/canyon.jpg);
     background-repeat: no-repeat;
 }
 
-
-.mailing-list{
-    color: #333333;
-    font-size: 22px;
-    line-height: 26px;
-}
 .mailing-list h2{
+    color: #ffffff;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+.mailing-list p{
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
+}
+/*как вот тут в каталоге все переиграть?чтобы фон стал белый а шрифт черный?*/
+.mailing-list-catalog{
+    background: #FFFFFF;
+}
+.mailing-list-catalog h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color:#000000;
+}
+.mailing-list-catalog p{
+    font-size: 22px;
+    line-height: 26px;
+    color:#000000;
+}
+.pagination-item{
+    width: 55px;
+    height: 55px;
+    background-color: #83B3D3;
+    border-radius: 4px;
+}
+.pagination-link{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #83B3D3;
 }
