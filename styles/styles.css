@@ -89,13 +89,25 @@ body{
 /*тут первый и второй квадрат они синие и заливка шрифта белая*/
 .advantages-item-block{
     background: #83B3D3;
+}
+.advantages-item-block h3{
     color: #ffffff;
 }
-
-
-
-
-
+.advantages-item-block span{
+    color: #ffffff;
+}
+.advantages-item-block p{
+    color: #ffffff;
+}
+.advantages-item:nth-child(3){
+    background: rgba(131, 179, 211, 0.12);
+}
+.advantages-item:nth-child(4){
+    background: rgba(131, 179, 211, 0.2);
+}
+.advantages-item:nth-child(5){
+    background: rgba(131, 179, 211, 0.12);
+}
 .mailing-list{
     background-color: #FFFFFF;
 }
