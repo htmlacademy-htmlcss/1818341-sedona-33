@@ -376,13 +376,6 @@ body{
     line-height: 23px;
 }
 
-.mailing-list{
-    /*цвет из головы, тк в фигме белый*/
-    background-color:gray;
-    background-image: url(../images/canyon.jpg);
-    background-repeat: no-repeat;
-}
-
 .mailing-list h2{
     color: #ffffff;
     font-weight: 700;
@@ -395,7 +388,11 @@ body{
     line-height: 26px;
     color: #ffffff;
 }
-/*как вот тут в каталоге все переиграть?чтобы фон стал белый а шрифт черный?*/
+.mailing-list-background{
+    background-image: url(../images/canyon.jpg);
+    background-repeat: no-repeat;
+
+}
 .mailing-list-catalog{
     background: #FFFFFF;
 }
