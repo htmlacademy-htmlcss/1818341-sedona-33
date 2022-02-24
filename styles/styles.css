@@ -43,6 +43,14 @@ body{
 .page-footer{
     width: 1200px;
     margin: 0 auto;
+
+}
+.page-footer-container{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .navigation{
     display: flex;
@@ -108,6 +116,7 @@ body{
 .advantages-item-second-block{
     display: flex;
     width: 1200px;
+
     
 }
 /* третий блок */
@@ -188,6 +197,8 @@ body{
 }
 .mailing-list{
     background-color: #FFFFFF;
+    text-align: center;
+    padding: 94px 200px;
 }
 .mailing-list h2 {
     color:#000000;
@@ -195,11 +206,15 @@ body{
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-bottom: 29px;
 }
 .mailing-list p {
+    margin: 0 auto;
+    width: 475px;
     font-size: 22px;
     line-height: 26px;
     color:#000000;
+    margin-bottom: 46px;
 }
 .mailing-list-background {
     background-image: url(../images/canyon.jpg);
@@ -214,19 +229,30 @@ body{
 .mailing-list-background p {
     color: #FFFFFF;
 }
+.hotel-search{
+   max-width: 1200px;
+   margin:0 auto;
+   text-align: center;  
+}
+.hotel-search-block{
+    padding: 92px 312px;
+}
 .hotel-search-h2{
     color: #000000;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-bottom: 29px;
 }
 .hotel-search p{
     font-style: normal;
     font-weight:400;
     font-size: 22px;
     line-height: 26px;
+    margin-bottom: 56px;
 }
+/* не могу понять как выпрямить кнопку по центру в блоке */
 .hotel-search-a{
     max-width: 575px;
     height: 60px;
