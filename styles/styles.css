@@ -45,25 +45,19 @@ body{
     margin: 0 auto;
 
 }
-.page-footer-container{
-    width: 1060px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .navigation{
     display: flex;
     width: 1060px;
     margin: 0 auto;
 }
 .navigation-list{
-    width: 345px;
+    width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 .navigation-user{
-    max-width: 265px;
+    max-width: 300px;
     margin-left: auto;
 }
 .navigation-link{
@@ -99,6 +93,29 @@ body{
     display: block;
     margin: 0 auto;
 }
+.advantages{
+    width: 100%;
+    text-align: center;
+}
+.advantages-top-header{
+    width: 720px;
+    margin: 0 auto;
+    padding: 64px 240px 80px;
+}
+.advantages-top-header-h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+}
+.advantages-top-header-p{
+    width: 720px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+}
 .advantages-list{
     flex-grow: 1; 
     padding-left: 0;
@@ -121,6 +138,7 @@ body{
 }
 /* третий блок */
 .advantages-item-third-block{
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -177,8 +195,8 @@ body{
 }
 .advantages-item-block{
     background-color: #83B3D3;
-    width: 400px;
     margin-right: 0 auto;
+    width: 100%;
 }
 .advantages-item-block h3{
     color: #FFFFFF;
@@ -287,6 +305,18 @@ body{
     height: 60px;
     border-radius: 0px 10px 10px 0px;
     border: none;
+}
+/* ТУТ ВЕСЬ НИЖНИЙ ОТДЕЛ  */
+.page-footer-container{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-list{
+    display: flex;
+    justify-content: space-between;
 }
 .telephone a{
     font-style: normal;
