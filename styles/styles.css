@@ -476,7 +476,9 @@ body{
     text-transform: uppercase;
     margin: 30px 290px;
 }
-
+.list-hotels{
+    display: flex;
+}
 .number-hotels{
     font-size: 18px;
     line-height: 23px;
@@ -500,14 +502,21 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.hotels-catalog-list{
+    width: 1200px;
+    margin: 0 auto;
+}
 .catalog-list{
+    width: 1056px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
 }
 .catalog-list-item{
-    margin-right: 18px;
     width: 340px;
-    padding: 20px;
+}
+.catalog-list-item:nth-child(3){
+    margin-right: 0;
 }
 .container{
     width: 1056px;
