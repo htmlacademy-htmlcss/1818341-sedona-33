@@ -13,16 +13,50 @@
     font-style: normal;
     font-display: swap;
 }
-
+html{
+    height: 100%;
+}
 body{
+    margin: 0;
+    display: flex;
+    min-height: 100%;    
+    flex-direction: column;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
     background-color: #ffffff;
 }
+.main-container{
+    flex-grow: 1;
+}
+/* это ограничитель контейнер в майне */
+.page-container{
+    width: 1200px;
+    margin: 0 auto;
+}
 .page-header{
     color: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
+}
+.page-footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.navigation{
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+.navigation-list{
+    width: 345px;
+    margin: 0;
+    padding: 0;
+}
+.navigation-user{
+    max-width: 265px;
+    margin-left: auto;
 }
 .navigation-link{
     font-size: 20px;
@@ -53,8 +87,45 @@ body{
     max-width: 1200px;
     height: 485px;
 }
+.big-slogans{
+    display: block;
+    margin: 0 auto;
+}
+.advantages-list{
+    flex-grow: 1; 
+    padding-left: 0;
+}
+.advantages-item{
+    width: 400px;
+}
+/* самый первый верхний блок */
+.advantages-item-first-block{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+/* аторой блок */
+.advantages-item-second-block{
+    display: flex;
+    width: 1200px;
+    
+}
+/* третий блок */
+.advantages-item-third-block{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 384px;/* height: 384px;
+    не понятно, тут ли надо высоту делать???  */
+
+}
 .advantages-inner-list{
     background: #FFFFFF;
+    width: 1200px;
+    height: 384px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .advantages-item-title{
     font-weight: 700;
@@ -62,6 +133,7 @@ body{
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
+    
 }
 .advantages-item-number{
     font-size: 18px;
@@ -77,6 +149,7 @@ body{
 .advantages-item-house{
     background-image: url(../images/house.svg);
     background-repeat: no-repeat;
+    width: 400px;
 }
 .advantages-item-burger{
     background-image: url(../images/burger.svg);
@@ -95,6 +168,8 @@ body{
 }
 .advantages-item-block{
     background-color: #83B3D3;
+    width: 400px;
+    margin-right: 0 auto;
 }
 .advantages-item-block h3{
     color: #FFFFFF;
@@ -105,15 +180,6 @@ body{
 .advantages-item-block p{
     color: #FFFFFF;
 }
-/* .advantages-item-navy-blue h3{
-    color: #ffffff;
-}
-.advantages-item-navy-blue span{
-    color: #ffffff;
-}
-.advantages-item-navy-blue p{
-    color: #ffffff;
-} */
 .advantages-item-blue{
     background-color: rgba(131, 179, 211, 0.12);
 }
