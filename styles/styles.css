@@ -504,19 +504,17 @@ body{
 }
 .hotels-catalog-list{
     width: 1200px;
-    margin: 0 auto;
+   
 }
 .catalog-list{
     width: 1056px;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: space-between;
 }
 .catalog-list-item{
     width: 340px;
-}
-.catalog-list-item:nth-child(3){
-    margin-right: 0;
 }
 .container{
     width: 1056px;
