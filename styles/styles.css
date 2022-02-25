@@ -25,7 +25,7 @@ body{
     font-size: 16px;
     line-height: 24px;
     color: #333333;
-    background-color: #ffffff;
+    background-color:#E5E5E5;
 }
 
 /* это ограничитель контейнер в майне */
@@ -49,8 +49,6 @@ body{
 }
 .navigation{
     display: flex;
-    width: 1060px;
-    margin: 0 auto;
 }
 .navigation-list{
     width: 100%;
@@ -88,7 +86,6 @@ body{
     background-color: #e5e5e5;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
-    max-width: 1200px;
     height: 485px;
 }
 .big-slogans{
@@ -96,11 +93,9 @@ body{
     margin: 0 auto;
 }
 .advantages{
-    width: 100%;
     text-align: center;
 }
 .advantages-top-header{
-    width: 720px;
     margin: 0 auto;
     padding: 64px 240px 80px;
 }
@@ -119,8 +114,9 @@ body{
     color: #333333;
 }
 .advantages-list{
-    flex-grow: 1; 
-    padding-left: 0;
+   padding: 0;
+   margin: 0;
+   list-style: none;
 }
 .advantages-item{
     width: 400px;
@@ -143,10 +139,12 @@ body{
     width: 1200px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     flex-grow: 1;
-    height: 384px;/* height: 384px;
-    не понятно, тут ли надо высоту делать???  */
-
+    height: 384px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .advantages-inner-list{
     background: #FFFFFF;
@@ -195,10 +193,17 @@ body{
 .advantages-item-navy-blue{
     background-color: #83B3D3;
 }
-.advantages-item-block{
+/*  */
+/* .advantages-item-block{
     background-color: #83B3D3;
     margin-right: 0 auto;
     width: 100%;
+} */
+/*  */
+.advantages-item-full{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .advantages-item-block h3{
     color: #FFFFFF;
@@ -250,8 +255,6 @@ body{
     color: #FFFFFF;
 }
 .hotel-search{
-   max-width: 1200px;
-   margin:0 auto;
    text-align: center;  
 }
 .hotel-search-block{
@@ -310,11 +313,10 @@ body{
 }
 /* ТУТ ВЕСЬ НИЖНИЙ ОТДЕЛ  */
 .page-footer-container{
-    width: 1060px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 72px;
 }
 .social-list{
     display: flex;
@@ -354,7 +356,9 @@ body{
     background:#e2e2e7;
     border: none;
 }
-
+.main-container{
+    flex-grow: 1;
+}
 
 
 /* тут все с каталога*/
@@ -502,23 +506,26 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.hotels-catalog-list{
-    width: 1200px;
-   
-}
 .catalog-list{
-    width: 1056px;
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
     padding: 0;
-    justify-content: space-between;
+    justify-content: flex-start;
+    list-style: none;
 }
 .catalog-list-item{
     width: 340px;
+    padding: 20px;
+    margin-right: 18px;
 }
 .container{
     width: 1056px;
     margin: 0 auto;
+}
+.max-center{
+    padding: 0 72px;
 }
 
 
