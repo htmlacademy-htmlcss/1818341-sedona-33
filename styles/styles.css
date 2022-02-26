@@ -29,14 +29,19 @@ body{
 }
 
 /* это ограничитель контейнер в майне */
+.main-contfiner{
+    flex-grow: 1;
+}
 .page-container{
+    background-color: white;
     width: 1200px;
     margin: 0 auto;
 }
 .page-header{
-    color: #ffffff;
+    background-color: white;
     width: 1200px;
     margin: 0 auto;
+    display: flex;
 }
 .logo{
     width: 140px;
@@ -49,12 +54,17 @@ body{
 }
 .navigation{
     display: flex;
+    justify-content: space-between;
 }
 .navigation-list{
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
+}
+.navigation-item{
+    list-style: none;
 }
 .navigation-user{
     max-width: 300px;
@@ -98,6 +108,7 @@ body{
 .advantages-top-header{
     margin: 0 auto;
     padding: 64px 240px 80px;
+    background-color: white;
 }
 .advantages-top-header-h2{
     font-weight: 700;
@@ -258,6 +269,7 @@ body{
    text-align: center;  
 }
 .hotel-search-block{
+    background-color: white;
     padding: 92px 312px;
 }
 .hotel-search-h2{
@@ -313,6 +325,7 @@ body{
 }
 /* ТУТ ВЕСЬ НИЖНИЙ ОТДЕЛ  */
 .page-footer-container{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -356,15 +369,7 @@ body{
     background:#e2e2e7;
     border: none;
 }
-.main-container{
-    flex-grow: 1;
-}
-
-
 /* тут все с каталога*/
-.main-inner{
-    display: flex;
-}
 .inner-header-title{
     font-weight:700;
     font-size: 60px;
