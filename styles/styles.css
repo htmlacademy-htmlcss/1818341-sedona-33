@@ -39,8 +39,9 @@ body{
 }
 .page-header{
     background-color: white;
-    width: 1200px;
+    width: 1060px;
     margin: 0 auto;
+    padding: 0 70px;
     display: flex;
     justify-content: space-between;
 }
@@ -60,7 +61,7 @@ body{
     width: 345px;
     display: flex;
     justify-content: space-between;
-    margin-right: 282px;
+    margin-right: 200px;
 }
 .navigation-item{
     list-style: none;
