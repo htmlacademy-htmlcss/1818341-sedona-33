@@ -39,15 +39,15 @@ body{
 }
 .page-header{
     background-color: white;
-    width: 1060px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 70px;
+    box-sizing:border-box;
     display: flex;
     justify-content: space-between;
 }
 .logo{
     width: 140px;
-    margin-right: 30px;
 }
 .page-footer{
     width: 1200px;
@@ -58,7 +58,7 @@ body{
     display: flex;
 }
 .navigation-list{
-    width: 345px;
+    width: 340px;
     display: flex;
     justify-content: space-between;
     margin-right: 200px;
