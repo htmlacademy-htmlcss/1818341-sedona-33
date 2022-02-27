@@ -33,18 +33,17 @@ body{
     flex-grow: 1;
 }
 .page-container{
-    background-color: white;
+    background-color: #ffffff;
     width: 1200px;
     margin: 0 auto;
 }
 .page-header{
-    background-color: white;
+    background-color:#ffffff;
     width: 1200px;
     margin: 0 auto;
     padding: 0 70px;
     box-sizing:border-box;
     display: flex;
-    justify-content: space-between;
 }
 .logo{
     width: 140px;
@@ -56,18 +55,19 @@ body{
 }
 .navigation{
     display: flex;
+    flex-grow: 1;
 }
 .navigation-list{
     width: 340px;
     display: flex;
     justify-content: space-between;
-    margin-right: 200px;
 }
 .navigation-item{
     list-style: none;
 }
 .navigation-user{
     max-width: 300px;
+    margin-left: auto;
 }
 .navigation-link{
     font-size: 20px;
@@ -107,7 +107,7 @@ body{
 .advantages-top-header{
     margin: 0 auto;
     padding: 64px 240px 80px;
-    background-color: white;
+    background-color: #ffffff;
 }
 .advantages-top-header-h2{
     font-weight: 700;
@@ -127,6 +127,9 @@ body{
    padding: 0;
    margin: 0;
    list-style: none;
+   display: flex;
+   flex-direction: column;
+   flex-grow:1;
 }
 .advantages-item{
     width: 400px;
@@ -136,13 +139,6 @@ body{
     display: flex;
     justify-content: space-between;
     width: 1200px;
-}
-/* аторой блок */
-.advantages-item-second-block{
-    display: flex;
-    width: 1200px;
-
-    
 }
 /* третий блок */
 .advantages-item-third-block{
@@ -199,29 +195,20 @@ body{
 .advantages-item-pale-blue{
     background-color: rgba(131, 179, 211, 0.12);
 }
-
+/*  */
 .advantages-item-navy-blue{
     background-color: #83B3D3;
-}
-/*  */
-/* .advantages-item-block{
-    background-color: #83B3D3;
-    margin-right: 0 auto;
-    width: 100%;
-} */
-/*  */
-.advantages-item-full{
     width: 1200px;
     display: flex;
     flex-wrap: wrap;
 }
-.advantages-item-block h3{
+.advantages-item-navy-blue h3{
     color: #FFFFFF;
 }
-.advantages-item-block span{
+.advantages-item-navy-blue span{
     color: #FFFFFF;
 }
-.advantages-item-block p{
+.advantages-item-navy-blue p{
     color: #FFFFFF;
 }
 .advantages-item-blue{
@@ -268,7 +255,7 @@ body{
    text-align: center;  
 }
 .hotel-search-block{
-    background-color: white;
+    background-color: #ffffff;
     padding: 92px 312px;
 }
 .hotel-search-h2{
@@ -324,7 +311,7 @@ body{
 }
 /* ТУТ ВЕСЬ НИЖНИЙ ОТДЕЛ  */
 .page-footer-container{
-    background-color: white;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
