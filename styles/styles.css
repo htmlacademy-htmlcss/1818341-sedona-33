@@ -177,6 +177,15 @@ body{
     width: 400px;
     background-color: rgba(131, 179, 211, 0.12);
 }
+.advantages-item-white-text > h3{
+    color: #ffffff;
+}
+.advantages-item-white-text > span{
+    color: #ffffff;
+}
+.advantages-item-white-text > p{
+    color: #ffffff;
+}
 .advantages-item-navy-blue{
     background-color: #83B3D3;
     width: 1200px;
