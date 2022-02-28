@@ -13,16 +13,59 @@
     font-style: normal;
     font-display: swap;
 }
-
+html{
+    height: 100%;
+}
 body{
+    margin: 0;
+    display: flex;
+    min-height: 100%;    
+    flex-direction: column;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
+    background-color:#E5E5E5;
+}
+
+/* это ограничитель контейнер в майне */
+.main-container{
+    flex-grow: 1;
     background-color: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
 }
 .page-header{
-    color: #ffffff;
+    background-color:#ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 70px;
+    box-sizing:border-box;
+    display: flex;
+}
+.logo{
+    width: 140px;
+}
+.page-footer{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.navigation{
+    display: flex;
+    flex-grow: 1;
+}
+.navigation-list{
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-item{
+    list-style: none;
+}
+.navigation-user{
+    max-width: 300px;
+    margin-left: auto;
 }
 .navigation-link{
     font-size: 20px;
@@ -50,11 +93,53 @@ body{
     background-color: #e5e5e5;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
-    max-width: 1200px;
     height: 485px;
+}
+.big-slogans{
+    display: block;
+    margin: 0 auto;
+}
+.advantages{
+    text-align: center;
+}
+.advantages-top-header{
+    margin: 0 auto;
+    padding: 64px 240px 80px;
+    background-color: #ffffff;
+}
+.advantages-top-header-h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+}
+.advantages-top-header-p{
+    width: 720px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+}
+.advantages-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 .advantages-inner-list{
     background: #FFFFFF;
+    width: 1200px;
+    height: 384px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.advantages-inner-list h3{
+   color: #000000;
 }
 .advantages-item-title{
     font-weight: 700;
@@ -62,6 +147,7 @@ body{
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
+    
 }
 .advantages-item-number{
     font-size: 18px;
@@ -77,39 +163,67 @@ body{
 .advantages-item-house{
     background-image: url(../images/house.svg);
     background-repeat: no-repeat;
+    width: 400px;
+    background-color: rgba(131, 179, 211, 0.12);
 }
 .advantages-item-burger{
     background-image: url(../images/burger.svg);
     background-repeat: no-repeat;
+    width: 400px;
 }
 .advantages-item-souvenir{
     background-image: url(../images/souvenir.svg);
     background-repeat: no-repeat;
-}
-.advantages-item-pale-blue{
+    width: 400px;
     background-color: rgba(131, 179, 211, 0.12);
 }
-
+.advantages-item-white-text > h3{
+    color: #ffffff;
+}
+.advantages-item-white-text > span{
+    color: #ffffff;
+}
+.advantages-item-white-text > p{
+    color: #ffffff;
+}
 .advantages-item-navy-blue{
     background-color: #83B3D3;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.advantages-item-navy-blue h3{
-    color: #ffffff;
+.advantages-item-navy-blue > h3{
+    color: #FFFFFF;
 }
-.advantages-item-navy-blue span{
-    color: #ffffff;
+.advantages-item-navy-blue > span{
+    color: #FFFFFF;
 }
-.advantages-item-navy-blue p{
-    color: #ffffff;
+.advantages-item-navy-blue > p{
+    color: #FFFFFF;
+}
+.advantages-item-block-text{
+    width: 400px;
 }
 .advantages-item-blue{
     background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 384px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .advantages-item-black-blue{
     background-color: rgba(131, 179, 211, 0.2);
+    width: 400px;
+    height: 384px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .mailing-list{
     background-color: #FFFFFF;
+    text-align: center;
+    padding: 94px 200px;
 }
 .mailing-list h2 {
     color:#000000;
@@ -117,11 +231,15 @@ body{
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-bottom: 29px;
 }
 .mailing-list p {
+    margin: 0 auto;
+    width: 475px;
     font-size: 22px;
     line-height: 26px;
     color:#000000;
+    margin-bottom: 46px;
 }
 .mailing-list-background {
     background-image: url(../images/canyon.jpg);
@@ -136,19 +254,29 @@ body{
 .mailing-list-background p {
     color: #FFFFFF;
 }
+.hotel-search{
+   text-align: center;  
+}
+.hotel-search-block{
+    background-color: #ffffff;
+    padding: 92px 312px;
+}
 .hotel-search-h2{
     color: #000000;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-bottom: 29px;
 }
 .hotel-search p{
     font-style: normal;
     font-weight:400;
     font-size: 22px;
     line-height: 26px;
+    margin-bottom: 56px;
 }
+/* не могу понять как выпрямить кнопку по центру в блоке */
 .hotel-search-a{
     max-width: 575px;
     height: 60px;
@@ -184,6 +312,18 @@ body{
     border-radius: 0px 10px 10px 0px;
     border: none;
 }
+/* ТУТ ВЕСЬ НИЖНИЙ ОТДЕЛ  */
+.page-footer-container{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 72px;
+}
+.social-list{
+    display: flex;
+    justify-content: space-between;
+}
 .telephone a{
     font-style: normal;
     font-weight:400;
@@ -218,9 +358,6 @@ body{
     background:#e2e2e7;
     border: none;
 }
-
-
-
 /* тут все с каталога*/
 .inner-header-title{
     font-weight:700;
@@ -233,6 +370,10 @@ body{
     font-size: 16px;
     line-height: 21px;
 }
+.catalog-filter{
+    display: flex;
+}
+
 .catalog-filter-title{
     font-style: normal;
     font-weight:700;
@@ -244,11 +385,6 @@ body{
 .catalog-filter-item{
     font-style: normal;
     font-weight:400;
-    font-size: 18px;
-    line-height: 23px;
-}
-/*но вот проблема, списки белые и на фоне их не видно, а как же тогда норм вставить?*/
-.catalog-filter-item{
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
@@ -336,8 +472,11 @@ body{
     font-size: 20px;
     line-height: 26px;
     text-transform: uppercase;
+    margin: 30px 290px;
 }
-
+.list-hotels{
+    display: flex;
+}
 .number-hotels{
     font-size: 18px;
     line-height: 23px;
@@ -347,6 +486,7 @@ body{
     height: 55px;
     background-color: #83B3D3;
     border-radius: 4px;
+    margin-right: 8px;
 }
 .pagination-link{
     font-weight: 700;
@@ -355,4 +495,55 @@ body{
     text-decoration: none;
     color: #ffffff;
     background-color: #83B3D3;
+}
+.center{
+    display: flex;
+    justify-content: space-between;
+}
+.catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    list-style: none;
+}
+.catalog-list-item{
+    width: 340px;
+    margin-right: 18px;
+}
+.catalog-list-item:nth-child(3n){
+    margin-right: 0;
+}
+.container{
+    width: 1056px;
+    margin: 0 auto;
+}
+.max-center{
+    padding: 0 72px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pagination-block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 73px;
+}
+.pagination{
+    display: flex;
+    justify-content: space-between;
 }
