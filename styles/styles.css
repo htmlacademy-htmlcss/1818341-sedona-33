@@ -29,8 +29,8 @@ body{
 }
 
 /* это ограничитель контейнер в майне */
-.main-continer{
-    width: 1200px;
+.main-container{
+    flex-grow: 1;
 }
 .page-container{
     background-color: #ffffff;
