@@ -31,8 +31,6 @@ body{
 /* это ограничитель контейнер в майне */
 .main-container{
     flex-grow: 1;
-}
-.page-container{
     background-color: #ffffff;
     width: 1200px;
     margin: 0 auto;
