@@ -29,8 +29,8 @@ body{
 }
 
 /* это ограничитель контейнер в майне */
-.main-contfiner{
-    flex-grow: 1;
+.main-continer{
+    width: 1200px;
 }
 .page-container{
     background-color: #ffffff;
@@ -183,6 +183,8 @@ body{
 .advantages-item-navy-blue{
     background-color: #83B3D3;
     width: 1200px;
+    display: flex;
+    
 }
 .advantages-item-navy-blue h3{
     color: #FFFFFF;
